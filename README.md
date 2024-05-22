@@ -59,9 +59,15 @@ TRAILMAP PANNEL (115V -be careful-)
 --------------------------------------------------------------------------
 Questions for James:
 - How are things localized on the network?
+  - ip addresses
 - How do you access specific paths on specific routers?
   - Can that all be done through ip address?
+  - ip addresses and serial input
 - If I make a funcitoning website, can we give select people access to the network from anywhere?
+  - yes, talk to firewall man (peter)
 - When I used HC-05's for bluetooth I get its address and then I use rfcomm bind to bind the primary and secondary (main/sub)
   - How does that work on a larger scale such as with routers and networks?
+    - serial input
+    - leearn more about the feratel box downstairs
+      - pretty sure it's the thing actually communicating with the sign
   
