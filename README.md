@@ -11,7 +11,11 @@ Info gathered with Pete:
 - ALTERNATIVELY use additional cat6 ethernet cord to hook up to rs422 and laptop while keeping other wires untouched
   - this should allow for communication from serial inside to board outside to be undisturbed while viewing the communication on the laptop
     - can then watch how the serial feedback changes while altering the sign's display
-- try to translate the serial recieved (modbus rtu) 
+- try to translate the serial recieved (modbus rtu)
+  - https://www.wevolver.com/article/modbus-rtu-a-comprehensive-guide-to-understanding-and-implementing-the-protocol 
+
+- rs422 inside L to R: brown, orange, green blue (TX, TX, RX, RX)
+- rs422 outside L to R: green, blue, brown, orange (TX, TX, RX, RX)
 
 ----------------------------------------------------------------------
 Example of serial recieved:
