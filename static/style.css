@@ -41,7 +41,9 @@ button {
     }
 }
 
-/* Open buttons for easiest trails */
+/*
+Open buttons for easiest trails
+*/
 #open_button_chase_it {
     background-color: #4CAF50; /* Green */
     color: white;
@@ -112,7 +114,9 @@ button {
     color: white;
 }
 
-/* Delayed buttons for easiest trails */
+/*
+Delayed buttons for easiest trails
+*/
 #delayed_button_chase_it {
     background-color: #ccb62a; /* Yellow */
     color: white;
@@ -183,7 +187,9 @@ button {
     color: white;
 }
 
-/* Closed buttons for easiest trails */
+/*
+Closed buttons for easiest trails
+*/
 #closed_button_chase_it {
     background-color: #f44336; /* Red */
     color: white;
@@ -254,14 +260,137 @@ button {
     color: white;
 }
 
+/*
+Open buttons for lifts
+*/
+#open_button_sun_mountain_express {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_plaza_chairlift {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_sun_chairlift {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_alpine_chairlift {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_east_meadow_chairlift {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_star_carpet {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_blue_ribbon_quad {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_lords_prayer_tbar {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#open_button_kids_carpet {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
 
-#button_container1 {
+
+/*
+Delay buttons for lifts
+*/
+#delayed_button_sun_mountain_express {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_plaza_chairlift {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_sun_chairlift {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_alpine_chairlift {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_east_meadow_chairlift {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_star_carpet {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_blue_ribbon_quad {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_lords_prayer_tbar {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+#delayed_button_kids_carpet {
+    background-color: #ccb62a; /* Yellow */
+    color: white;
+}
+
+/*
+Closed buttons for lifts
+*/
+#closed_button_sun_mountain_express {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_plaza_chairlift {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_sun_chairlift {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_alpine_chairlift {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_east_meadow_chairlift {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_star_carpet {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_blue_ribbon_quad {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#closed_button_lords_prayer_tbar {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#delayed_button_sun_mountain_express {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/*
+Button containers
+*/
+#button_container_easiest_trails {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#button_container2 {
+#button_container_lifts {
     display: flex;
     flex-direction: column;
     align-items: center;
