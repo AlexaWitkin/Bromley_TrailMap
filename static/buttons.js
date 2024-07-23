@@ -1,7 +1,7 @@
 /*
 buttons.js
 TrailMapInterface V1.0
- */
+*/
 
 /*
 Open Easiest Trails
