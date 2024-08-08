@@ -2,6 +2,14 @@
 New interface for Bromley's trail map, utilizing Feratel's hardware.
 
 ----------------------------------------------------------------------
+Newest Idea:
+- get a TTl to hook up the RS422 to the TTL and then the TTL to the Arduino
+  - should allow for the translation of serial input/output without echo/excess
+  - https://arduinogetstarted.com/tutorials/arduino-rs422
+- 
+
+
+----------------------------------------------------------------------
 Info gathered with Pete:
 - hook up ethernet in dell room to laptop
   - use wireshark to read into 2.39 (serial portion of feratel's stuff)
