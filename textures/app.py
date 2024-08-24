@@ -25,10 +25,10 @@ def onLoad():
         global open_button_chase_it
         open_button_chase_it = 'OPEN'
     elif HC_05.chaseItState == 'Delayed Trail\n':
-        global open_button_chase_it
+        global delayed_button_chase_it
         delayed_button_chase_it = 'DELAYED'
     elif HC_05.chaseItState == 'Closed Trail\n':
-        global open_button_chase_it
+        global closed_button_chase_it
         closed_button_chase_it = 'CLOSED'
 
 
