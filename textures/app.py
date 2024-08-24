@@ -4,53 +4,54 @@ TrailMapInterface V1.0
 """
 
 from flask import Flask, render_template
-
+import HC_05
 
 app = Flask(__name__)
 
-lock_button_text = 'Lock Door'
-light_button_text = 'Light On'
+open_button_chase_it = 'open'
+delayed_button_chase_it = 'delayed'
+closed_button_chase_it = 'closed'
 
 # all code that needs to be executed at the start of the program
 # makes sure the buttons have the appropriate initial text based on servo position
 def onLoad():
-    RS422.loadCurrentStates()
-    if RS422.lightState == 'on\n':
-        global light_button_text
-        light_button_text = 'Light Off'
+    HC_05.loadCurrentStates()
 
-
-    if RS422.doorState == 'locked\n':
-        global lock_button_text
-        lock_button_text = 'Unlock Door'
+    """
+    Ensure correct labels are on Chase It buttons
+    """
+    if HC_05.chaseItState == 'open\n':
+        global open_button_chase_it
+        open_button_chase_it = 'OPEN'
+    elif HC_05.chaseItState == 'delayed\n':
+        global open_button_chase_it
+        delayed_button_chase_it = 'DELAYED'
+    elif HC_05.chaseItState == 'closed\n':
+        global open_button_chase_it
+        closed_button_chase_it = 'CLOSED'
 
 
 onLoad()
 
-@app.route("/lock_door", methods=["POST"])
-def lock_door_url():
-    print("Lock door")
-    RS422.lock_door()
+@app.route("/open_button_chase_it", methods=["POST"])
+def open_button_chase_it_url():
+    print("Open Chase It")
+    HC_05.chaseIt_open()
     return "ok"
 
-@app.route("/unlock_door", methods=["POST"])
-def unlock_door_url():
-    print("Unlock door")
-    RS422.unlock_door()
+@app.route("/delayed_button_chase_it", methods=["POST"])
+def delayed_button_chase_it_url():
+    print("Delayed Chase It")
+    HC_05.chaseIt_delayed()
     return "ok"
 
-@app.route("/light_on", methods=["POST"])
-def light_on_url():
-    print("Light on")
-    RS422.light_on()
+@app.route("/closed_button_chase_it", methods=["POST"])
+def closed_button_chase_it_url():
+    print("Closed Chase It")
+    HC_05.chaseIt_closed()
     return "ok"
 
-@app.route("/light_off", methods=["POST"])
-def light_off_url():
-    print("Light off")
-    RS422.light_off()
-    return "ok"
 
 @app.route("/", methods=["GET"])
 def home():
-    return render_template("templates/buttons.html", title="Bromley TrailMap", lockButtonText=lock_button_text, lightButtonText=light_button_text)
+    return render_template("templates/buttons.html", title="Bromley TrailMap", openChaseItButtonText=open_button_chase_it, delayedChaseItButtonText=delayed_button_chase_it, closedChaseItButtonText=closed_button_chase_it)
