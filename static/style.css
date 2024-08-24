@@ -11,33 +11,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 h1 {
     color: black; /*#ffd700 Gold */
     font-family: 'Arial Black', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 h2 {
     color: black; /*#ffd700 Gold */
     font-family: 'Arial Black', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 button {
-    padding: 4vw;
-    margin: 2vw;
+    padding: 2vw;
+    margin: 1vw;
     cursor: pointer;
     max-width: 50px;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 214px) {
     button {
-        padding: 3vw;
-        margin: 1.5vw;
-        font-size: 1.5em;
+        padding: 1.5vw;
+        margin: 0.75vw;
+        font-size: 0.75em;
     }
 }
 
