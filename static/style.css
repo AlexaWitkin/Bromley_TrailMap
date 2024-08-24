@@ -256,7 +256,7 @@ Closed buttons for easiest trails
 }
 
 #closed_button_woods_run {
-    background-color: #11557C; /* Red */
+    background-color: #f44336; /* Red */
     color: white;
 }
 
@@ -377,7 +377,7 @@ Closed buttons for lifts
     color: white;
 }
 #delayed_button_sun_mountain_express {
-    background-color: #f44336; /* Red */
+    background-color: #11557C; /* Red */
     color: white;
 }
 
