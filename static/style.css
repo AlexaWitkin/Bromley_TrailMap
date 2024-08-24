@@ -337,7 +337,7 @@ Delay buttons for lifts
     color: white;
 }
 #delayed_button_kids_carpet {
-    background-color: #11557C; /* Yellow */
+    background-color: #ccb62a; /* Yellow */
     color: white;
 }
 
@@ -373,10 +373,10 @@ Closed buttons for lifts
     color: white;
 }
 #closed_button_lords_prayer_tbar {
-    background-color: #11557C; /* Red */
+    background-color: #f44336; /* Red */
     color: white;
 }
-#delayed_button_sun_mountain_express {
+#closed_button_sun_mountain_express {
     background-color: #f44336; /* Red */
     color: white;
 }
