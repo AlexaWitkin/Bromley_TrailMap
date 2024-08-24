@@ -10,7 +10,6 @@ int CS = 9;
 int CLK = 10;
 
 LedControl led(DIN, CLK, CS, 0);
-byte heart[8] = {0x66, 0xFF, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C, 0x18};
 byte open[8] = {0x01, 0x03, 0x07, 0x8E, 0xDC, 0xf8, 0x70, 0x20};
 byte closed[8] = {0x81, 0xC3, 0x66, 0x3C, 0x18, 0x3C, 0x66, 0xC3};
 byte delayed[8] = {0x00, 0x00, 0x3C, 0x3C, 0x3C, 0x3C, 0x00, 0x00};
@@ -34,6 +33,21 @@ void loop() {
     delay(1000);
     printByte(delayed);
     delay(1000);
+
+    if (Serial.available()) {
+        int a = Serial.parseInt(); // will be serial value sent by rasp-pi
+        Serial.println(a); // print serial value
+
+        if (a = 100) {
+            printByte(open);
+        }
+        if (a = 200) {
+            printByte(delayed);
+        }
+        if (a = 300) {
+            printByte(closed);
+        }
+    }
 }
 
 void printByte(byte type []) {
@@ -42,6 +56,7 @@ void printByte(byte type []) {
         led.setRow(0, i, type[i]);
     }
 }
+
 
 /*
 make something to save current image, then change each with if statements
@@ -97,33 +112,3 @@ void loop() {
   }
 }
 */
-
-/*
-    if (Serial.available()) {
-        int a = Serial.parseInt(); // will be serial value sent by rasp-pi
-        Serial.println(a); // print serial value
-
-        if (a == 100) {
-            digitalWrite(led, HIGH);
-        }
-        if (a == 200) {
-            digitalWrite(led, LOW);
-        }
-
-        if (a = 300) {
-            lightOn();
-        }
-        if (a = 400) {
-            lightOff();
-        }
-
-        if (a = 500) {
-            lock();
-        }
-        if (a = 600) {
-            unlock();
-        }
-    }
-
-}
- */
