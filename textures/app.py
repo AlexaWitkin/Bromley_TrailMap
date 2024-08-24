@@ -9,9 +9,9 @@ import HC_05
 
 app = Flask(__name__)
 
-open_button_chase_it = 'open'
-delayed_button_chase_it = 'delayed'
-closed_button_chase_it = 'closed'
+open_button_chase_it = 'Open Trail'
+delayed_button_chase_it = 'Delayed Trail'
+closed_button_chase_it = 'Closed Trail'
 
 # all code that needs to be executed at the start of the program
 # makes sure the buttons have the appropriate initial text based on servo position
@@ -21,13 +21,13 @@ def onLoad():
     """
     Ensure correct labels are on Chase It buttons
     """
-    if HC_05.chaseItState == 'open\n':
+    if HC_05.chaseItState == 'Open Trail\n':
         global open_button_chase_it
         open_button_chase_it = 'OPEN'
-    elif HC_05.chaseItState == 'delayed\n':
+    elif HC_05.chaseItState == 'Delayed Trail\n':
         global open_button_chase_it
         delayed_button_chase_it = 'DELAYED'
-    elif HC_05.chaseItState == 'closed\n':
+    elif HC_05.chaseItState == 'Closed Trail\n':
         global open_button_chase_it
         closed_button_chase_it = 'CLOSED'
 
