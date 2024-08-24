@@ -386,12 +386,12 @@ Button containers
 */
 #button_container_easiest_trails {
     display: flow;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
 #button_container_lifts {
     display: flow-root;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
