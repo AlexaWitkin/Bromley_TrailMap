@@ -8,7 +8,7 @@ body {
     background-color: white; /*#4b0082 Dark Purple */
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: start;
     justify-content: start;
     height: 50vh;
