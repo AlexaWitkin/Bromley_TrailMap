@@ -14,13 +14,13 @@ light_button_text = 'Light On'
 # all code that needs to be executed at the start of the program
 # makes sure the buttons have the appropriate initial text based on servo position
 def onLoad():
-    HC_05.loadCurrentStates()
-    if HC_05.lightState == 'on\n':
+    RS422.loadCurrentStates()
+    if RS422.lightState == 'on\n':
         global light_button_text
         light_button_text = 'Light Off'
 
 
-    if HC_05.doorState == 'locked\n':
+    if RS422.doorState == 'locked\n':
         global lock_button_text
         lock_button_text = 'Unlock Door'
 
@@ -30,25 +30,25 @@ onLoad()
 @app.route("/lock_door", methods=["POST"])
 def lock_door_url():
     print("Lock door")
-    HC_05.lock_door()
+    RS422.lock_door()
     return "ok"
 
 @app.route("/unlock_door", methods=["POST"])
 def unlock_door_url():
     print("Unlock door")
-    HC_05.unlock_door()
+    RS422.unlock_door()
     return "ok"
 
 @app.route("/light_on", methods=["POST"])
 def light_on_url():
     print("Light on")
-    HC_05.light_on()
+    RS422.light_on()
     return "ok"
 
 @app.route("/light_off", methods=["POST"])
 def light_off_url():
     print("Light off")
-    HC_05.light_off()
+    RS422.light_off()
     return "ok"
 
 @app.route("/", methods=["GET"])
