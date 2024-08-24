@@ -1,5 +1,5 @@
 /*
-RS422.ino
+HC05.ino
 TrailMapInterface V1.0
 */
 
