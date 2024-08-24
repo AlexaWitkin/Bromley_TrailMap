@@ -30,7 +30,7 @@ button {
     padding: 4vw;
     margin: 2vw;
     cursor: pointer;
-    max-width: 200px;
+    max-width: 50px;
 }
 
 @media screen and (min-width: 428px) {
