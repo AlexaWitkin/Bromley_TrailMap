@@ -385,13 +385,13 @@ Closed buttons for lifts
 Button containers
 */
 #button_container_easiest_trails {
-    display: flow;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #button_container_lifts {
-    display: flow-root;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
