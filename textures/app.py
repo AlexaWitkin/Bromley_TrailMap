@@ -1,6 +1,7 @@
 """
 app.py
 TrailMapInterface V1.0
+this app.py includes all code that must be included in onload
 """
 
 from flask import Flask, render_template
