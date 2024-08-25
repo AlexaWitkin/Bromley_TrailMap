@@ -27,12 +27,12 @@ void setup() {
 }
 
 void loop() {
-    printByte(open);
-    delay(1000);
-    printByte(closed);
-    delay(1000);
-    printByte(delayed);
-    delay(1000);
+//    printByte(open);
+//    delay(1000);
+//    printByte(closed);
+//    delay(1000);
+//    printByte(delayed);
+//    delay(1000);
 
     if (Serial.available()) {
         int a = Serial.parseInt(); // will be serial value sent by rasp-pi
@@ -40,12 +40,15 @@ void loop() {
 
         if (a = 100) {
             printByte(open);
+            delay(1000);
         }
         if (a = 200) {
             printByte(delayed);
+            delay(1000);
         }
         if (a = 300) {
             printByte(closed);
+            delay(1000);
         }
     }
 }
