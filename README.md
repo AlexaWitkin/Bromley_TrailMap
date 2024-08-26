@@ -2,6 +2,21 @@
 New interface for Bromley's trail map, utilizing Feratel's hardware.
 
 ----------------------------------------------------------------------
+Plan B:
+- use 8x8 LED module with MAX72xx attachment to display check (open), x (closed), or square (delayed)
+- use HC-05 bluetooth to talk between raspberrypi and arduino
+- website: file:///Users/alexawitkin/CLionProjects/Bromley_TrailMap/templates/buttons.html
+  - get ip address website (will be the one that updates with raspberrypi + arduino
+
+In Progress:
+- get buttons.html to communicate with buttons.js
+- ensure serial is transmitted to HC-05 and HC_05.ino works accordingly
+
+Updated Schematic:
+
+
+
+----------------------------------------------------------------------
 Newest Idea:
 - get a TTl to hook up the RS422 to the TTL and then the TTL to the Arduino
   - should allow for the translation of serial input/output without echo/excess
