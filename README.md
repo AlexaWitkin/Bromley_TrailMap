@@ -13,7 +13,7 @@ In Progress:
 - ensure serial is transmitted to HC-05 and HC_05.ino works accordingly
 
 Updated Schematic:
-![Schematic](Bromley_Schematic.jpg)
+![Schematic](textures/Bromley_Schematic.jpg)
 
 ----------------------------------------------------------------------
 Newest Idea:
